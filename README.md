@@ -1,1 +1,0 @@
-# kominictviromanak.cz
