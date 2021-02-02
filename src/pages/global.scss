@@ -129,7 +129,7 @@ body {
     font-size: .76em;
     line-height: 140%;
     margin-bottom: 30px;
-    color: #bbb;
+    color: #ddd;
 
     @media (min-width: $tablet) {
       font-size: .83em;
@@ -173,7 +173,7 @@ body {
 
   .desc {
     margin-bottom: 60px;
-    max-width: 530px;
+    max-width: 590px;
 
     @media (min-width: $tablet) {
       width: calc(100% - 30px);
