@@ -73,7 +73,7 @@ const IndexPage = () => {
 
                 {/*Zákon č. 320/2015 Sb.*/}
                 {/*+++++++++++++++++++++*/}
-                {/*Vyhlaska c. 34/2016 Sb.*/}
+                {/*Vyhláška č. 34/2016 Sb.*/}
                 {/*+++++++++++++++++++++++*/}
 
                 {/*http://mujkominik.com/revize-kominu.php*/}
