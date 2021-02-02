@@ -10,11 +10,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
+@import './variables.scss';
 
 body {
   position: relative;
   background: #1a1a1a;
   color: #DCE5DD;
+  padding-bottom: 200px;
 
   &:before {
     content: '';
@@ -30,12 +32,16 @@ body {
 
 .komin {
   position: relative;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  font-size: 2em;
-  //font-family: 'Roboto Slab', serif;
-  //font-family: 'Lato', sans-serif;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 1.7em;
   font-family: 'Lora', sans-serif;
+
+  @media (min-width: $tablet) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-size: 2em;
+  }
 
   .center {
     text-align: center;
@@ -45,18 +51,28 @@ body {
 
   .h {
     font-size: 1.2em;
-    margin-top: 140px;
-    margin-bottom: 50px;
-    margin-left: -30px;
+    margin-top: 100px;
+    margin-bottom: 30px;
     font-family: 'Big Shoulders Inline Text', cursive;
+
+    @media (min-width: $tablet) {
+      margin-left: -30px;
+      margin-top: 140px;
+      margin-bottom: 50px;
+    }
   }
 
   .romanak {
     position: fixed;
     bottom: 0;
     right: 0;
+    z-index: 99;
     width: 100%;
-    max-width: 440px;
+    max-width: 220px;
+
+    @media (min-width: $tablet) {
+      max-width: 440px;
+    }
 
     img {
       display: block;
@@ -66,7 +82,11 @@ body {
   }
 
   .header {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
+
+    @media (min-width: $tablet) {
+      margin-bottom: 60px;
+    }
   }
 
   .logo {
@@ -106,15 +126,21 @@ body {
   }
 
   .p {
-    font-size: .83em;
+    font-size: .76em;
     line-height: 140%;
     margin-bottom: 30px;
+    color: #bbb;
+
+    @media (min-width: $tablet) {
+      font-size: .83em;
+    }
   }
 
   .container {
     position: relative;
     max-width: 1080px;
     margin: 0 auto;
+    padding: 0 15px;
   }
 
   .contact {
@@ -133,7 +159,12 @@ body {
     margin: 12px 0 0;
     a {
       text-decoration: none;
-      font-size: 1.1em;
+      font-size: .89em;
+
+      @media (min-width: $tablet) {
+        font-size: 1.1em;
+      }
+
       &:hover {
         text-decoration: underline;
       }
@@ -141,36 +172,51 @@ body {
   }
 
   .desc {
+    margin-bottom: 60px;
     max-width: 530px;
-    line-height: 150%;
-    background: rgba(#e0e0e0, .9);
-    color: #000;
-    padding: 30px;
-    margin: 50px 0 75px -30px;
-    font-size: .9em;
-    font-weight: 400;
 
-    position: relative;
-
-    &:after {
-      content: '';
-      background: transparent;
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      width: calc(100% + 2px);
-      height: calc(100% + 2px);
-      border: 2px solid #d0d0d0;
+    @media (min-width: $tablet) {
+      width: calc(100% - 30px);
+      margin: 50px 0 75px -30px;
     }
-    &:before {
-      content: '';
-      background: transparent;
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: calc(100% + 2px);
-      height: calc(100% + 2px);
-      border: 2px solid #d0d0d0;
+
+    .inner {
+      padding: 15px;
+      position: relative;
+      background: #d0d0d0;
+      color: #000;
+      font-weight: 400;
+      font-size: .8em;
+      line-height: 150%;
+      text-align: center;
+
+      @media (min-width: $tablet) {
+        padding: 30px;
+        font-size: .9em;
+        line-height: 150%;
+        text-align: left;
+      }
+
+      &:after {
+        content: '';
+        background: transparent;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: calc(100% + 2px);
+        height: calc(100% + 2px);
+        border: 2px solid #d0d0d0;
+      }
+      &:before {
+        content: '';
+        background: transparent;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: calc(100% + 2px);
+        height: calc(100% + 2px);
+        border: 2px solid #d0d0d0;
+      }
     }
   }
 

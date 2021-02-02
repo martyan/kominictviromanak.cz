@@ -34,11 +34,13 @@ const IndexPage = () => {
                     <img src={kominik} alt="Filip Romaňák"/>
                 </div>
                 <div className="header" data-aos="fade-down">
-                    <h1 className="logo k1" data-aos-delay="100">Kominictví Filip Romaňák</h1>
+                    <h1 className="logo k1" data-aos-delay="100">Kominictví Filip&nbsp;Romaňák</h1>
                     <p className="phone" data-aos-delay="500"><a href="tel:+420777048935">+420 777 048 935</a></p>
                 </div>
                 <div>
-                    <p className="desc" data-aos="fade-right"><strong>Kontrola a čištění komínů</strong> dle vyhlášky v <strong>Brně</strong> a&nbsp;<strong>přilehlém&nbsp;okolí</strong></p>
+                    <div className="desc">
+                        <p className="inner"><strong>Kontrola&nbsp;a&nbsp;čištění&nbsp;komínů</strong> dle&nbsp;vyhlášky v&nbsp;<strong>Brně</strong>&nbsp;a&nbsp;<strong>přilehlém&nbsp;okolí</strong></p>
+                    </div>
                     <p className="p" data-aos="fade-up"><strong>Kominík s několikaletou praxí</strong> a výučním listem v oboru kominictví</p>
                     <p className="p" data-aos="fade-up">Každý rok jezdím na <strong>školení výrobců komínových vložek</strong> pro&nbsp;zisk <strong>certifikátu osvědčení</strong>.</p>
                     <p className="p" data-aos="fade-up">Přihlížím&nbsp;k&nbsp;normám <strong>ČSN&nbsp;73&nbsp;4201</strong>, <strong>EN&nbsp;1443</strong></p>
